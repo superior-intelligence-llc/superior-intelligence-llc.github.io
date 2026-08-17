@@ -43,6 +43,16 @@ h1 em { font-family:"Playfair Display",serif; font-weight:500; }
 .principles article+article { padding-left:44px; }.principles article:last-child { border:0; }
 .principles span,.work-number,.work-tag { font:400 .86rem "DM Mono",monospace; letter-spacing:.07em; color:var(--muted); }
 .principles h3 { margin:92px 0 16px; font-size:1.35rem; letter-spacing:-.035em; }.principles p { margin:0; color:var(--muted); line-height:1.65; font-size:1.06rem; }
+.approach { display:grid; grid-template-columns:1fr 2.1fr; gap:50px; padding:130px 0; border-bottom:1px solid var(--line); }
+.approach-copy { max-width:860px; }
+.approach-header { display:grid; grid-template-columns:minmax(0,1fr) 154px; gap:38px; align-items:center; }
+.approach-kicker { margin:4px 0 22px; font:400 .9rem "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; color:var(--copper); }
+.approach h2 { max-width:850px; margin:0; font-size:clamp(2.6rem,5vw,5.2rem); line-height:1.03; letter-spacing:-.06em; font-weight:500; }
+.approach-portrait { width:148px; aspect-ratio:1; margin:0; overflow:hidden; box-shadow:0 14px 32px rgba(20,36,43,.13); }
+.approach-portrait img { width:100%; height:100%; display:block; object-fit:cover; object-position:center; }
+.approach-copy>p:not(.approach-kicker):not(.approach-note) { max-width:720px; margin:28px 0 0; color:var(--muted); font-size:1.05rem; line-height:1.75; }
+.approach-copy .approach-lede { color:var(--ink); font-size:1.15rem; }
+.approach-copy .approach-note { max-width:720px; margin:34px 0 0; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.78rem; line-height:1.6; }
 .work { padding:135px 0; }.work-heading { display:grid; grid-template-columns:1fr 2.1fr; gap:50px; margin-bottom:85px; }
 .work-list { border-top:1px solid var(--ink); }.work-list article { display:grid; grid-template-columns:80px 1fr auto; align-items:center; gap:35px; padding:35px 0; border-bottom:1px solid var(--line); }
 .work-list h3 { margin:0 0 8px; font-size:1.65rem; letter-spacing:-.045em; }.work-list p { margin:0; color:var(--muted); }.work-tag { border:1px solid var(--line); border-radius:999px; padding:9px 14px; color:var(--ink); }
@@ -55,6 +65,6 @@ footer { min-height:150px; display:grid; grid-template-columns:1fr auto auto; ga
 @media(max-width:850px){
   .site-header,main,footer{width:min(100% - 36px,1320px)}.site-header{height:76px}.site-header nav a:not(.nav-cta){display:none}.nav-cta{padding:10px 13px}.brand{font-size:.9rem}.hero{padding-top:65px}h1{margin:30px 0 38px}.hero-lower{display:block}.lede{width:auto}.hero-lower .button{margin-top:28px}
   .outcomes{grid-template-columns:1fr;gap:55px;margin-top:80px;padding-top:60px}.outcomes-heading h2{max-width:600px}.outcomes-list{grid-template-columns:1fr}.outcomes-list article,.outcomes-list article:nth-child(even),.outcomes-list article:nth-child(n+3){min-height:0;padding:28px 0;border-left:0;border-bottom:1px solid var(--line)}.outcomes-list article:last-child{border-bottom:0}
-  .intro,.locality,.work-heading{grid-template-columns:1fr;padding:90px 0}.work-heading{padding:0;gap:25px;margin-bottom:55px}.principles{grid-template-columns:1fr}.principles article,.principles article+article{min-height:0;padding:34px 0;border-right:0;border-bottom:1px solid var(--line)}.principles h3{margin-top:40px}.work{padding:90px 0}.work-list article{grid-template-columns:42px 1fr;gap:18px}.work-tag{display:none}.statement,.contact{margin-left:-18px;margin-right:-18px;padding-left:18px;padding-right:18px}footer{grid-template-columns:1fr;gap:14px;padding:38px 0}.footer-brand{margin-bottom:16px}footer p{margin:0}
+  .intro,.approach,.locality,.work-heading{grid-template-columns:1fr;padding:90px 0}.approach{gap:32px}.approach-header{grid-template-columns:1fr;gap:22px}.approach-portrait{grid-row:1;width:98px;box-shadow:0 10px 24px rgba(20,36,43,.12)}.work-heading{padding:0;gap:25px;margin-bottom:55px}.principles{grid-template-columns:1fr}.principles article,.principles article+article{min-height:0;padding:34px 0;border-right:0;border-bottom:1px solid var(--line)}.principles h3{margin-top:40px}.work{padding:90px 0}.work-list article{grid-template-columns:42px 1fr;gap:18px}.work-tag{display:none}.statement,.contact{margin-left:-18px;margin-right:-18px;padding-left:18px;padding-right:18px}footer{grid-template-columns:1fr;gap:14px;padding:38px 0}.footer-brand{margin-bottom:16px}footer p{margin:0}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
